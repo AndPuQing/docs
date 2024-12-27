@@ -8,7 +8,7 @@
 
 * 考虑到环境差异性，我们推荐使用教程提供的标准镜像完成环境准备：
 
-  * 镜像链接： registry.baidubce.com/device/paddle-dcu:dtk23.10.1-kylinv10-gcc73-py310
+  * 镜像链接：ccr-2vdh3abv-pub.cnc.bj.baidubce.com/paddlepaddle/paddle-dcu:dtk24.04.1-kylinv10-gcc82
 
 ### 环境安装
 
@@ -19,7 +19,7 @@
 *由于 dcu 代码位于飞桨主框架中，因此我们不需要安装额外的 Custom Device 包*
 
 ```shell
-python -m pip install --pre paddlepaddle-rocm -i https://www.paddlepaddle.org.cn/packages/nightly/dcu/
+python -m pip install --pre paddlepaddle-dcu -i https://www.paddlepaddle.org.cn/packages/nightly/dcu/
 ```
 
 ## 二、运行示例

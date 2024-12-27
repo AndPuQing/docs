@@ -31,7 +31,7 @@ templates_path = ["/templates"]
 
 project = "PaddlePaddle"
 author = f"{project} developers"
-copyright = "%d, %s" % (time.localtime(time.time()).tm_year, author)
+copyright = f"{time.localtime(time.time()).tm_year}, {author}"
 github_doc_root = "https://github.com/PaddlePaddle/docs/docs"
 
 # add markdown parser
@@ -139,9 +139,8 @@ version = ""
 
 # html_permalinks_icon='P'
 
-# Show type hints in the description
-autodoc_typehints = "description"
-autodoc_typehints_description_target = "documented"
+# Do NOT show type hints
+autodoc_typehints = "none"
 
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
